@@ -5,7 +5,7 @@ The app can be run locally by using https://github.com/basic-ohjelmoia/SparkAndH
 
 The POST needs to be directed to http://localhost:4567/hash 
 
-Example usage
+Example usage:
 
 POST /hash HTTP/1.1
 HOST: localhost:4567
@@ -13,9 +13,9 @@ content-type: application/json
 content-length: 33
 
 {
-  "text": "Paradise Cittty"
+  "text": "Paradise City"
 }
 
 {
-"hash": "502a2db874ade482dee8cde681f3727f84b1c85168c9a8fc8e605cde15bbb534"
+"hash": "d44e706603c15dda4dec815b268c74883e910d08e7dffa54184af5e195dd9479"
 }
