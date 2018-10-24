@@ -12,6 +12,7 @@
             <properties>
                 <exec.args>-classpath %classpath com.acme.sparkandhash.SparkAndHash</exec.args>
                 <exec.executable>java</exec.executable>
+                <exec.workingdir>G:\Kehitys\SparkAndHash</exec.workingdir>
             </properties>
         </action>
         <action>
@@ -27,6 +28,7 @@
                 <exec.args>-Xdebug -Xrunjdwp:transport=dt_socket,server=n,address=${jpda.address} -classpath %classpath com.acme.sparkandhash.SparkAndHash</exec.args>
                 <exec.executable>java</exec.executable>
                 <jpda.listen>true</jpda.listen>
+                <exec.workingdir>G:\Kehitys\SparkAndHash</exec.workingdir>
             </properties>
         </action>
         <action>
@@ -41,6 +43,17 @@
             <properties>
                 <exec.args>-classpath %classpath com.acme.sparkandhash.SparkAndHash</exec.args>
                 <exec.executable>java</exec.executable>
+                <exec.workingdir>G:\Kehitys\SparkAndHash</exec.workingdir>
             </properties>
+        </action>
+        <action>
+            <actionName>build</actionName>
+            <preAction>build-with-dependencies</preAction>
+            <packagings>
+                <packaging>*</packaging>
+            </packagings>
+            <goals>
+                <goal>install</goal>
+            </goals>
         </action>
     </actions>
